@@ -19,9 +19,15 @@
   - visualize : linear projection, Positional embedding, Tranformer attention matrix
 - study/vit.py
   - main file which selects vit model and train the model.
+  - vit2_1.py : SGD optimizer, cosine learning rate decay (Replication original model)
+  - vit4.py, vit_4_1.py : adam optimizer
+  - vit5.py: SGD optimizer, linear learning rate decay
+  - vit6.py: SGD optimizer, exponential learning rate decay
+  - vit7.py: SGD optimizer, ReduceLROnPlateau learning rate decay
 - study/model_with_positional_embedding.py, study/model_without_positional_embedding.py
   - model files are separated with two kinds, one is the model with adding positional embedding and the other is the model without adding positional embedding.
 - study/patchdata.py 
   - patchdata file make patches according to size of image and patch.
 - study/test.py
-  - test file derives accuracy.
+  - test file derives accuracy and loss from test data.
+- 
