@@ -30,4 +30,3 @@
   - patchdata file make patches according to size of image and patch.
 - study/test.py
   - test file derives accuracy and loss from test data.
-- 
