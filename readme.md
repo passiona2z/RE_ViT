@@ -17,3 +17,11 @@
 - study/vit_parameter_stduy.ipynb
 - study/visualization.ipynb
   - visualize : linear projection, Positional embedding, Tranformer attention matrix
+- study/vit.py
+  - main file which selects vit model and train the model.
+- study/model_with_positional_embedding.py, study/model_without_positional_embedding.py
+  - model files are separated with two kinds, one is the model with adding positional embedding and the other is the model without adding positional embedding.
+- study/patchdata.py 
+  - patchdata file make patches according to size of image and patch.
+- study/test.py
+  - test file derives accuracy.
