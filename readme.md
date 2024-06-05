@@ -1,16 +1,30 @@
 # Reproducibility Project
-- our experiments using PyTorch and Hugging Face frameworks
+- Our experiments using PyTorch and Hugging Face frameworks
 
 ## Replication experiments   
 ### Replication, Resolution adjustment, Data sampling, Domain shifting
 
 ### ViT
-- (DDP) CUDA_VISIBLE_DEVICES="0,1,2,3" accelerate launch vit_ddp.py
-- (DDP & Data sampling) CUDA_VISIBLE_DEVICES="0,1,2,3" accelerate launch vit_ddp_sampling.py
+- Replication, Resolution adjustment
+  - accelerate launch vit_ddp.py
+    - (parser setting) resolution : 512~64
+- Data sampling 
+  - accelerate launch vit_ddp_sampling.py
+    - (parser setting) dataset_ex : True / dataset_ratio : 1.0~0.1
+- Domain shifting
+  - accelerate launch vit_ddp_domain.py
+    - (parser setting) dataset_name 
 
 ### BiT(ResNet)
-- (DDP) CUDA_VISIBLE_DEVICES="0,1,2,3" accelerate launch bit_ddp.py
-- (DDP & Data sampling) CUDA_VISIBLE_DEVICES="0,1,2,3" accelerate launch bit_ddp_sampling.py
+- Replication, Resolution adjustment
+  - accelerate launch bit_ddp.py
+    - (parser setting) resolution : 512~64
+- Data sampling 
+  - accelerate launch bit_ddp_sampling.py
+    - (parser setting) dataset_ex : True / dataset_ratio : 1.0~0.1
+- Domain shifting
+  - accelerate launch bit_ddp_domain.py
+    - (parser setting) dataset_name 
 
 ## Ablation and Parameter Study
 - study/vit_ablation.ipynb 
